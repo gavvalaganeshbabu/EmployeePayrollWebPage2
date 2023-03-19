@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="EmployeeStyle.css">
+    <title>Welcome to EMployee PayRoll Form</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="./images/icon.png" alt="">
+            <div>
+                <span class="emp-text">EMPLOYEE</span>
+                <br>
+                <span class="emp-text black">PAYROLL</span>
+            </div>
+        </div>
+    </header>
+    <div class="form-container">
+        <div class="form">
+            <div class="">
+                <h3 class="form-head">Employee PayRoll Form</h3>
+            </div>
+            <div class="row-container">
+                <label class="text label lbl-width" for="name">Name</label>
+                <input class="input" type="text" placeholder="Enter Name" name="name" id="name">
+            </div>
+           <div class="row-container">
+            <label for="profile" class="text label lbl-width">Profile Image</label>
+            <div class="profile-container">
+                <label class="lbl">
+                    <input type="radio" name="profile" id="">
+                    <img class="img" src="./images/profile1.png" alt="">
+                </label>
+                <label class="lbl">
+                    <input type="radio" name="profile" id="">
+                    <img class="img" src="./images/profile2.png" alt="">
+                </label>
+                <label class="lbl">
+                    <input type="radio" name="profile" id="">
+                    <img class="img" src="./images/profile3.png" alt="">
+                </label>
+                <label class="lbl">
+                    <input type="radio" class="profile" name="profile" id="">
+                    <img class="img" src="./images/profile4.png" alt="">
+                </label>
+            </div>
+           </div>
+           <div class="row-container">
+            <label for="" class="text label lbl-width">
+                Gender
+            </label>
+            <div class="gender-container">
+                <input value="male" type="radio" class="pointer" name="gender" id="male">
+                <label for="male" class="text label">Male</label>
+                <input value="female" type="radio" class="pointer" name="gender" id="female">
+                <label for="female" class="text label">Female</label>
+            </div>
+           </div>
+           <div class="row-container">
+            <label class="text label lbl-width" for="">Department</label>
+            <div class="checkbox-container">
+                <input type="checkbox" name="department" id="hr">
+                <label class="text label" for="hr">HR</label>
+                <input type="checkbox" name="department" id="sales">
+                <label class="text label" for="sales">Sales</label>
+                <input type="checkbox" name="department" id="finance">
+                <label class="text label" for="finance">Finance</label>
+                <input type="checkbox" name="department" id="engineer">
+                <label class="text label" for="engineer">Engineer</label>
+                <input type="checkbox" name="department" id="others">
+                <label class="text label" for="others">Others</label>
+            </div>
+        </div>
+        <div class="row-container">
+            <label for="salary" class="text label lbl-width">Choose Salary</label>
+            <input   type="range" class="input" name="" id="salary" min="300000" step="10000" max="500000">
+            <label id="salary-text" for="">2364245</label>
+        </div>
+        <div class="row-container">
+            <label class="text label lbl-width" for="note">Note</label>
+            <textarea class="note" name="" id="note" cols="70" rows="4"></textarea>
+        </div>
+        <div class="row-container">
+            <div class="lbl-width">
+                <button class="btn cancel" id="cancel" onclick="cancel()">
+                    cancel
+                </button>
+            </div>
+            <div>
+                <button type="submit" class="btn submit" onclick="save()">Submit</button>
+                <button class="btn reset">Reset</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        var salaryElement = document.getElementById('salary');
+        var salaryTextElement = document.getElementById('salary-text');
+        salaryElement.addEventListener('input',()=>{
+            salaryTextElement.innerText = salaryElement.value;
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+body{
+    background-color: rgb(239, 240, 240);
+}
+.header{
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+.logo-container{
+    width: 80%;
+    display: flex;
+    align-items:center;
+}
+.emp-text{
+    font: normal normal bold 20px/25px Montserrat;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0px;
+    color: #82a70c;
+    text-transform: capitalize;
+}
+.black{
+    color: black;
+}
+.form-container{
+    display: flex;
+    justify-content: center;
+}
+.form{
+    background-color: #ffffff;
+    box-sizing: border-box;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rebeccapurple;
+    width: 65%;
+}
+.form-head{
+    font: normal normal bold 24px/37px Roboto;
+    letter-spacing: 0px;
+    color: #42515f;
+    text-transform: capitalize;
+    opacity: 1;
+    padding-bottom: 20px;
+}
+.label{
+    padding: 12px 12px 12px 0px;
+}
+.text{
+    font-size: 16px;
+    color: #42515f;
+    opacity: 1;
+    font-family: Roboto;
+}
+.input{
+    margin:12px;
+    border-radius: 4px;
+    width: 60%;
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+.lbl-width{
+    min-width: 150px;
+}
+.row-container{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.img{
+    padding-left: 5px;
+    width: 40px;
+    border-radius: 50%;
+}
+.lbl{
+    margin-left:10px ;
+    display: flex;
+    align-items: center;
+}
+.profile-container{
+    display: flex;
+    justify-content: left;
+
+}
+.pointer{
+    cursor: pointer;
+}
+.btn{
+    width: 100px;
+    padding: 5px;
+    margin: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 0.2px solid silver;
+}
+.submit{
+    background-color: lightgreen;
+}
+.cancel{
+    background-color: lightcoral;
+}
+.reset{
+    background-color: aquamarine;
+}
+.note{
+    padding: 5px;
+    
+}
