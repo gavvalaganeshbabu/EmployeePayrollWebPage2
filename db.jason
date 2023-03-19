@@ -1,0 +1,13 @@
+{
+  "employees": [
+    {
+      "name": "Customer",
+      "profilePic": "./images/profile1.png",
+      "gender": "male",
+      "department": "Sales,Finance,",
+      "salary": "400000",
+      "note": "cvffbcxvfb",
+      "id": 1
+    }
+  ]
+}
